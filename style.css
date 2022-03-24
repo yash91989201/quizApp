@@ -1,0 +1,161 @@
+*,
+*::before,
+*::after {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* Positioning  Properties*/
+/* Display and Box Model  Properties*/
+/* Color  Properties*/
+/* Text  Properties*/
+/* Other Properties */
+/* Animation Properties */
+/* Pseudo Class Properties*/
+/* Media Query*/
+
+body {
+  /* Text  Properties*/
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+  /* Other Properties */
+  cursor: pointer;
+}
+
+header {
+  /* Display and Box Model  Properties*/
+  padding: 16px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  /* Color  Properties*/
+  background-color: #218380;
+  /* Text  Properties*/
+  font-size: clamp(16px, 2rem, 24px);
+  color: #ffffff;
+}
+
+header a,
+div {
+  /* Display and Box Model  Properties*/
+  padding: 8px;
+}
+
+.timer-container {
+  /* Display and Box Model  Properties*/
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+main {
+  /* Display and Box Model  Properties*/
+  height: calc(100vh - 80px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rule-card,
+.quiz-card,
+.highscore-card,
+.quizend-card {
+  /* Display and Box Model  Properties*/
+  margin: 0 auto;
+  padding: 32px;
+  width: min(720px, 90%);
+  border-radius: 16px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.highscore-card {
+  /* Display and Box Model  Properties*/
+  width: min(400px, 90%);
+}
+
+.quizend-card {
+  /* Display and Box Model  Properties*/
+  width: min(480px, 90%);
+}
+
+.rule-card.hide,
+.quiz-card.hide,
+.highscore-card.hide,
+.quizend-card.hide,
+.answer-status.hide {
+  /* Display and Box Model  Properties*/
+  display: none;
+}
+
+.rule-card h1,
+p {
+  /* Display and Box Model  Properties*/
+  padding: 12px 0px;
+}
+
+.rule-card p {
+  /* Text  Properties*/
+  font-size: 16px;
+}
+
+button {
+  /* Display and Box Model  Properties*/
+  margin: 12px 0;
+  padding: 10px 16px;
+  border: 0;
+  border-radius: 8px;
+  /* Color  Properties*/
+  background-color: #218380;
+  color: #ffffff;
+  /* Other Properties */
+  cursor: pointer;
+}
+
+.quiz-card h1 {
+  /* Display and Box Model  Properties*/
+  margin: 24px 0;
+  /* Text Properties */
+  font-size: clamp(24px, 5vw, 32px);
+}
+
+.quiz-card p {
+  /* Display and Box Model  Properties*/
+  margin: 16px 0;
+  padding: 16px;
+  border-radius: 8px;
+  /* Color  Properties*/
+  background-color: #218380;
+  /* Text  Properties*/
+  color: #ffffff;
+}
+
+.quiz-card .option-wrapper {
+  padding: 0px;
+}
+
+.quiz-card .option {
+  /* Other Properties */
+  cursor: pointer;
+}
+
+.quiz-card .answer-status {
+  border-top: 1px solid #000;
+}
+
+.highscore-card ol {
+  /* Display and Box Model  Properties*/
+  padding: 0 24px;
+}
+
+.highscore-card ol li {
+  /* Display and Box Model  Properties*/
+  margin: 16px;
+}
+
+.quizend-card input {
+  /* Display and Box Model  Properties*/
+  padding: 8px;
+}
